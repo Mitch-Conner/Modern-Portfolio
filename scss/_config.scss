@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #333; 
+$secondary-color: #96ee1a;
 $show-home-image: true; // sets that the default value is to show the home image
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.4;
@@ -29,6 +29,17 @@ $background-opacity: 0.4;
         }
     }
 }
+
+// Set Text Color
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
 
 // Media Query Mixins
 @mixin mediaSm {

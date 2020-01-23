@@ -13,7 +13,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -48,7 +48,7 @@
     top: 0;
     width: 100%;
     visibility: hidden;
-    //opacity: 0.9;
+    opacity: 0.9;
 
     &.show {
         visibility: visible;
@@ -69,7 +69,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: rgba(darken($primary-color,5), 0.9);
+        //background: rgba(darken($primary-color,5), 0.9);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -80,9 +80,9 @@
         }
     }
 
-    &-branding {
-        background: rgba($primary-color, 0.9);
-    }
+    //&-branding {
+        //background: rgba($primary-color, 0.9);
+    //}
     // Branding Side
 
     &-branding {
@@ -132,6 +132,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
+        //color: set-text-color($primary-color);
         color: #fff;
         text-decoration: none;
         @include easeOut;
